@@ -1,0 +1,26 @@
+{
+  "name": "semana-agilizei",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "npx cypress open",
+    "cy:run": "npx cypress run",
+    "cy:open:cucumber": "npx cypress open --config-file cypress-cucumber.json",
+    "cy:run:cucumber": "npx cypress run --config-file cypress-cucumber.json --spec **/All.features"
+  },
+  "keywords": [],
+  "author": "Renato de Oliveira Nunes",
+  "license": "ISC",
+  "devDependencies": {
+    "chance": "^1.1.7",
+    "cypress": "4.10.0",
+    "cypress-cucumber-preprocessor": "^3.0.0",
+    "cypress-file-upload": "^4.1.1"
+  },
+  "cypress-cucumber-preprocessor": { 
+    "nonGlobalStepDefinitions": true
+  }
+
+
+}
